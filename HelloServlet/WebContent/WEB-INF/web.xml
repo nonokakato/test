@@ -39,9 +39,9 @@ id="WebApp_ID" version="3.1">
   </servlet>
   <servlet-mapping>
     <servlet-name>Test</servlet-name>
-    <url-pattern>/HelloServlet/TextServlet</url-pattern>
+    <url-pattern>/HelloServlet/TestServlet</url-pattern>
   </servlet-mapping>
-  
+
   <servlet>
    <servlet-name>MySQL</servlet-name>
    <servlet-class>MySQLServlet</servlet-class>
@@ -50,5 +50,5 @@ id="WebApp_ID" version="3.1">
   <servlet-name>MySQL</servlet-name>
   <url-pattern>/HelloServlet/MySQLServlet</url-pattern>
   </servlet-mapping>
-  
+
 </web-app>

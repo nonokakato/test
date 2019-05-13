@@ -21,32 +21,32 @@ public class MySQLServlet extends HttpServlet {
 	public MySQLServlet() {
         super();
 	}
-	
+
 	protected void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
-		
+
 		PrintWriter out= response.getWriter();
-		
+
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>データベーステスト</title>");
 		out.println("</head>");
 		out.println("<body>");
-		
+
 		Connection conn =null;
-		String url="jdbc:mysql://localhost/testdb";
+		String url="jdbc:mysql://localhost/testdbkato";
 		String user="root";
 		String password="mysql";
-		
+
 		try{
-			Class.forName("<com.mysql.jdbc.Driver").newInstance();
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			conn=DriverManager.getConnection(url, user, password);
-			
+
 			Statement stmt=conn.createStatement();
 			String sql="SELECT * FROM test_table";
 			ResultSet rs=stmt.executeQuery(sql);
-			
+
 			while(rs.next()){
 				int userId=rs.getInt("user_id");
 				String userName=rs.getString("user_name");
@@ -54,11 +54,11 @@ public class MySQLServlet extends HttpServlet {
 				out.println("<p>");
 				out.println("ユーザーID:"+userId+",ユーザー名:"+userName+",パスワード:"+userPassword);
 				out.println("</p>");
-			
+
 			}
 			rs.close();
 			stmt.close();
-			
+
 		}catch (ClassNotFoundException e){
 			out.println("ClassNotFoundException:"+e.getMessage());
 		}catch(SQLException e){
@@ -72,9 +72,9 @@ public class MySQLServlet extends HttpServlet {
 				}
 			}catch(SQLException e){
 				out.println("SQLException:"+e.getMessage());
-			
+
 		}
-		
+
 	}
 
 	out.println("</body>");
