@@ -1,8 +1,0 @@
-127.0.0.1 - - [28/Jun/2019:20:04:18 +0900] "GET / HTTP/1.1" 404 1019
-0:0:0:0:0:0:0:1 - - [28/Jun/2019:20:04:21 +0900] "GET /login/ HTTP/1.1" 200 734
-0:0:0:0:0:0:0:1 - - [28/Jun/2019:20:04:31 +0900] "POST /login/LoginAction.action;jsessionid=E61573AC5EA83AA3E96ACF91BE74D976 HTTP/1.1" 200 9550
-0:0:0:0:0:0:0:1 - - [28/Jun/2019:20:05:13 +0900] "POST /login/LoginAction.action;jsessionid=E61573AC5EA83AA3E96ACF91BE74D976 HTTP/1.1" 200 9550
-0:0:0:0:0:0:0:1 - - [28/Jun/2019:20:08:36 +0900] "GET /login/ HTTP/1.1" 200 690
-0:0:0:0:0:0:0:1 - - [28/Jun/2019:20:08:45 +0900] "POST /login/LoginAction.action HTTP/1.1" 200 9550
-0:0:0:0:0:0:0:1 - - [28/Jun/2019:20:09:49 +0900] "GET /login/ HTTP/1.1" 200 690
-0:0:0:0:0:0:0:1 - - [28/Jun/2019:20:09:58 +0900] "POST /login/LoginAction.action HTTP/1.1" 200 9550
