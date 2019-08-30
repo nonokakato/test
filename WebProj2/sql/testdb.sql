@@ -1,6 +1,6 @@
-drop database if exists testdb_nono;
-create database testdb_nono;
-use testdb_nono;
+drop database if exists testdb_nonokakato;
+create database testdb_nonokakato;
+use testdb_nonokakato;
 
 create table users(
 
